@@ -66,3 +66,4 @@ def code(message, key):
 if __name__ == '__main__':
     main()
 
+print()
