@@ -2,7 +2,7 @@
 Name: Jeremy Miller
 bumper.py
 
-Problem: This program makes circles bounce around in a window
+Problem: This program makes balls bounce around in a window
 
 Certificate of Authenticity:
 I certify that this assignment is entirely my own work
@@ -21,7 +21,7 @@ def main():
     win.setBackground('black')
     radius = 20
 
-    win_width_left = radius
+    win_width_left = radius  # center is separated from the wall by the radius at a collision
     win_width_right = win_width - radius
     win_height_bottom = radius
     win_height_top = win_height - radius
@@ -97,7 +97,7 @@ def did_collide(circle1, circle2):
     x_2 = center2.getX()
     y_2 = center2.getY()
     dist = sqrt((x_2 - x_1) ** 2 + (y_2 - y_1) ** 2)
-    return dist <= radius
+    return dist < radius
 
 
 def make_circle(center, radius, win):
