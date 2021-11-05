@@ -28,9 +28,6 @@ def target():
     circle.setFill("yellow")
     circle.draw(win)
 
-    # Add code here to get the dimensions and draw the target
-
-    # Wait for another click to exit
     win.getMouse()
     win.close()
 
